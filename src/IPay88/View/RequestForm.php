@@ -13,6 +13,7 @@ class RequestForm
 			    echo "<input type='hidden' name='".ucfirst($key)."' value='".htmlspecialchars($val)."'>";
 			}
 		}
+		echo "<input type='hidden' name='SignatureType' value='SHA256'/>";
 		echo "</form>";
 		echo "
 		<script type='text/javascript'>
